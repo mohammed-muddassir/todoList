@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="todo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="profile">
+        <p class="user">Hey There,</p>
+    </div>
+   
+   <div class="add">
+        <div class="add-task" id="addtask" >
+            <i class="material-icons" id="add">add</i>
+            <p class="text">Add Task</p>
+        </div>
+    </div>
+    <main>
+        <div class="centre">
+            <p id="date">00:00:00</p>
+            
+            <p id="day"></p>
+        </div>
+        <div class="addingtasks" id="addingtasks">
+            <div id="tasks">
+                <form>
+                    <label for="task"></label>
+                    <input type="text" id="task" name="task" placeholder="Enter a Task">
+                    <i class="material-icons check" id="check" >check</i>
+                </form>     
+            </div>
+        </div>
+        <div class="assigned" id="assigned">
+            <br><br><br>
+            <div class="a">
+                
+                    <p  id="work">Assigned <i class="material-icons" id="expand">expand_more</i><!-- &#11167; --></p>
+                
+                
+                 <div id="nil">
+                    <div class="assigned-list">
+                    
+                                <ul id="todolist">
+                                    
+                                </ul>
+                           
+                            
+                    </div>
+                </div>
+                    <div >
+                         <p id="no-tasks">Assign Some tasks</p>   
+                            
+
+                     </div>
+
+            </div>
+            
+        </div>
+    </main>
+    <script src="todo.js"></script>    
+    
+</body>
+</html>
