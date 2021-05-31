@@ -1,0 +1,279 @@
+body{
+    background:rgb(5,5,5);
+    position: relative;
+}
+
+.profile{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #dda6b9;
+    letter-spacing: 1px;
+    
+    
+}
+.user{
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    display:block;
+    margin-right: 0;
+}
+#headline{
+    position: relative;
+    color: rgb(224, 224, 224,0.75);
+    padding: 8px;
+    margin: 10px;
+    margin-top: 15px;
+     cursor: pointer;
+}
+#close{
+     position: relative;
+    color: rgb(200, 199, 199); 
+    padding:4px;
+    margin-left: 40%;
+    margin-top: 15%;
+    cursor: pointer;
+    
+}
+.sliding-menu{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 0;
+    width:250px;
+    height:100%;
+    overflow: hidden;
+    left: -250px;
+    z-index: 99;
+    background: #23252D;
+
+}
+#welcome{
+    color: #7946a3 ;
+    padding-left: 8px;
+    font-family:'Poppins', sans-serif ;
+    letter-spacing: 0.5px;
+}
+#tasks a{
+    text-decoration: none;
+    display: block;
+    color:#F7BAD3;
+    font-family:'Poppins', sans-serif ;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding:10px;
+
+}
+
+#date{
+    position: relative;
+    color:white;
+    font-family:'Poppins';
+    letter-spacing: 1px;
+    margin: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 35px;
+}
+#day{
+    position: relative;
+    color: white;
+    font-family:'Poppins';
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 2px;
+    font-size: 20px;
+}
+#headline{
+    padding:5px;    
+    margin: 5px;
+    margin-left: 0;
+    margin-right: 0;
+   cursor: default;
+}
+.add-task{
+    position: relative;
+    color: white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    max-width: 450px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+
+    padding-bottom: 1px;
+    width: 100px;
+    background: rgb(184, 67, 252);
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: 4px;
+    box-shadow:3px 3px rgb(180, 155, 180);
+}
+.add-task:hover{
+    background: rgb(179, 46, 255);
+}
+.text{
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+.add-task:active{
+    transform: translateX(3px);
+    transform: translateY(2px);
+    box-shadow: 2px 2px #666;/*  rgb(180, 155, 180) ; */
+}
+#close:hover{
+    transform: rotate(225deg);
+    
+}
+#addingtasks{
+    display: none;
+}
+input{
+    position: absolute;
+    margin-left: 5px;
+    cursor: pointer;
+    padding:6px 12px;
+    width: 75%;
+    height: 5%;
+    background-color:transparent; /* rgb(124, 122, 122,0.3); */
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Poppins';
+    border:2px  thick#A653F5;
+    border-radius: 30px;
+    
+
+}
+#no-tasks{
+    display: none;
+    color:white;
+    font-family: 'Poppins';
+    text-align: center;
+    box-sizing: border-box;
+}
+#no-tasks:hover{
+    cursor:default;
+    font-weight: 500;
+    font-size: 20px;
+    transition: .3s ease-in-out;
+}
+input:focus{  
+    outline: none;
+}
+
+
+#check{
+    position: absolute;
+    color: rgb(200, 199, 199); 
+    display: block;
+    box-sizing: border-box;
+    align-self: center;
+    margin-right: 20px;
+    margin-left: 75%;
+    padding-right: 0px;
+    padding-top: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.a{
+    position: relative;
+    
+}
+.actived{
+    transform: rotate(180 deg);
+    
+}
+
+#work{
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-family:'Poppins';
+    letter-spacing: 1px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin:10px 10px 0px 7.5px;
+    box-sizing: border-box;
+    padding: 5px 35px 5px 15px;
+    background: #85978650;
+    border:2px thin rgb(177, 177, 177);
+    border-radius: 40px;
+    cursor: pointer;
+
+}
+
+
+#expand{
+    position:absolute;
+    cursor: pointer;
+    color: rgb(200, 199, 199);
+   text-align: center;
+   
+}
+#work:hover{
+    background: #85978681;
+}
+
+.assigned-list{
+    color: white;
+}
+
+
+
+ul{
+    padding-right: 20px;
+    margin-right:40px;
+}
+
+ #nil{
+     margin: 20px ;
+     max-width: 500px;
+     width: 100%;
+ }
+ #todolist li{
+     
+     position: relative;
+     list-style-type: none;
+     height:45px;
+     line-height: 45px;
+     font-family: 'Poppins';
+     font-size: 12.5px;
+     padding:  0px 15px;
+     margin-bottom: 8px; 
+     background-color: #A063C8;
+     border-radius: 5px;
+     overflow: hidden;
+ }
+ #todolist li span{
+     position: absolute;
+     right: 75px;
+     top:10px;
+     font-size: 10px;
+     font-weight: 500;
+ }
+ #todolist li i{
+     position: absolute;
+     cursor: pointer;
+     right: -45px;
+    width: 45px;
+    height:35px;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 0px 3px  3px 0px;
+    background-color: #ec6194; 
+    transform:all 0.3s ease;    
+ }
+ li #text{
+     padding-left: 5px;
+ }
+ #todolist li:hover i{
+     right:0px;
+ }
+ 
