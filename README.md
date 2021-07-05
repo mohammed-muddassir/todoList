@@ -1,4 +1,4 @@
 # todoList
 An online todo List 
 
-Stores data in browser's local storage
+Tasks are stored in browser's local storage
